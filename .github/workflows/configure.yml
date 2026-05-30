@@ -16,7 +16,6 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-        cache: 'maven'
     - name: Build with Maven
       run: mvn clean install pmd:pmd test -Dmaven.test.failure.ignore=true
     - name: Generate JavaDoc
